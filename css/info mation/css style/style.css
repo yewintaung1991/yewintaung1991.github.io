@@ -1,0 +1,16 @@
+h1{
+    /* color: red; */
+    /* 0 to 9 , a to f */
+    /*rgp */
+    /*hex code ဘဲသုံးသာ်*/
+    
+    color: #df1313c3;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px; /* သုံးနည်း PX  */
+}
+p{
+    background-color: #13df24c3;
+    width: 50%;/*  {%} ဆိုတာ screen ကိုမြင်ရတဲ့နေရာ*/
+    text-indent: 50px;
+}
