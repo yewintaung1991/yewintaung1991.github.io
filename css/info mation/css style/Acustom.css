@@ -1,5 +1,5 @@
 /* grid */
-.gridone , div{
+.gridone div{
     padding: 20px;
     text-align: center;
     color: rgb(0, 0, 0);
@@ -10,6 +10,11 @@
     /* grid-column-gap: 40px; */
     /* grid-row-gap: 50px; */
     grid-gap: 30px;
+}
+.gridtwo, .gridthree div{
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
 }
 .gridtwo ,.gridthree {
     display: grid;

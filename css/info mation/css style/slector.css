@@ -1,0 +1,18 @@
+/* universal section ကို (*)နဲရေးတာပါ */
+*{
+     color: red ;text-align: center;
+    
+}
+/* tag selector/elemnt ဆိုတာကိုလိုခြင့်တဲ အရာကို Selectorလုပ်တာပါ */
+p{
+
+}
+h1{
+    color: black ;
+    
+}
+/* attribute select ဆိုတာ a selector မှာသုံးတ */
+a[title="Google"]{
+    color: blue;
+
+}

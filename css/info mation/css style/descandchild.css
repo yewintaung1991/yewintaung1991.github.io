@@ -1,0 +1,7 @@
+#descandchild a{ 
+    color: red;
+
+}
+#child > a{ 
+    color: red;
+}

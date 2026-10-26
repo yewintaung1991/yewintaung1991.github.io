@@ -1,0 +1,24 @@
+/* ID Selector ကိုရေးခြင်ရင် (#)နဲရေးရတယ် */
+
+h1{
+     color: red ;text-align: center;
+    
+}
+/* text-indent ကအရှေဖက် line-height အပေါ်အောက် အကွာ‌ေး
+ word-spacing စကားစုတွေကိုခြတ,*/
+
+#idselector{
+    color: brown;
+    text-indent: 50px;
+    line-height: 30px;
+    word-spacing: 5px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+
+
+}
+.classselctor{
+    color: green;
+    text-transform: capitalize;
+    font-size: 24px;
+}
