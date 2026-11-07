@@ -1,4 +1,147 @@
-.Game_hard_photo{
-width: 100px;
+/* body */
 
+body {
+  font-family: sans-serif;
+  background-color: #f6f1e7;
+  margin: 0;
+}
+/* harder */
+.header {
+  background-color: #3b2a1e;
+  text-align: center;
+  padding: 15px;
+}
+
+.header h1 {
+  color: #ffd98a;
+  margin: 5px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.menu a:hover {
+  color: #ffd98a;
+}
+
+
+.hero {
+  background-color: #8a5a22;
+  /* background-size: cover; */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  font-size: 32px;
+}
+
+.button {
+  background-color: #c8871e;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+/* .content */
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+/* စာအုပ် ကတ် */
+.book {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 180px;
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+  vertical-align: top;
+}
+
+.cover {
+  font-size: 48px;
+  padding: 25px 0;
+  border-radius: 8px;
+}
+.cover-img {
+  width: 80%;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.book h3 {
+  margin: 10px 0 5px 0;
+}
+
+.book p {
+  color: #666;
+  margin: 3px 0;
+}
+
+.price {
+  color: #b3541e;
+  font-weight: bold;
+}
+
+.book button {
+  background-color: #3b2a1e;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+/* Login အကွက် */
+.login-box {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  margin: 30px auto;
+  padding: 25px;
+  text-align: left;
+}
+
+.login-box h2 {
+  text-align: center;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 10px 0;
+  box-sizing: border-box;
+}
+
+.login-box .submit {
+  background-color: #c8871e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.small {
+  font-size: 13px;
+  text-align: center;
+}
+
+
+.footer {
+  background-color: #3b2a1e;
+  color: #ccc;
+  text-align: center;
+  padding: 10px;
 }
