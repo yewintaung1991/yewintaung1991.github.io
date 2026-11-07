@@ -1,0 +1,488 @@
+@font-face {
+    font-family: "OSWALDf";
+    src: url(../fonts/fontawesome-free-7.3.1-web/webfonts/);
+
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "OSWALDf";
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
+
+}
+
+.navbar_logo {
+    width: 150px;
+    height: 70%;
+
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+.navbar ul li {
+    list-style: none;
+    margin-left: 50px;
+
+
+}
+
+.nav_item {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.nav_item:hover {
+    display: inline-block;
+    color: #2d3892;
+    transform: translateY(-5px);
+    transition: 0.3;
+}
+
+.get_started {
+    background-color: #2d3892;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    border: 1px solid#2d3892;
+    font-weight: bold;
+
+}
+
+.get_started:hover {
+    background-color: #ffffff;
+    color: #2d3892;
+    border: 1px solid#2d3892;
+
+}
+
+/* Start bunner */
+.bunner {
+    background-image: url(../images/banner2.png);
+    height: 80vh;
+    background-size: cover;
+
+}
+
+.bunner_text {
+    margin-left: 120px;
+    padding-top: 100px;
+
+}
+
+.bunner_text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+}
+
+.bunner_text h2 {
+    font-size: 30px;
+    color: #9c7a1d;
+    margin-bottom: 20px;
+}
+
+.bunner_text p {
+    color: #ffffff;
+    width: 500px;
+    line-height: 30px;
+
+}
+
+.our_package {
+    display: inline-block;
+    background-color: #9c7a1d;
+    color: #ffffff;
+    border: 1px solid #9c7a1d;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.our_package hover {
+    background-color: transparent;
+    color: #9c7a1d;
+    border: 1px solid #9c7a1d;
+}
+
+/* end bunner  */
+/* setart service */
+.Service {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.service_hr {
+    width: 100px;
+    margin: auto;
+    height: 2px;
+    background-color: black;
+    margin-top: 6px;
+}
+
+.service_cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 40px 150px 0px;
+    gap: 30px;
+}
+
+.service_card {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.service_card h3 {
+    margin-bottom: 10px;
+}
+
+.service_card p {
+    font-size: 15px;
+    color: black;
+}
+
+.service_icon {
+    color: #2d3892;
+    margin-bottom: 5px;
+}
+
+/* end .Service */
+.Destination {
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.description_hr {
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    margin-top: 6px;
+}
+
+.Destinations_card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+
+}
+
+.Destination_cards {
+    height: 200px;
+    border-radius: 5px;
+}
+
+.Destination_cards img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+.Destination_title {
+    position: relative;
+    top: -90%;
+    left: 10%;
+    color: #2d3892;
+}
+
+.Destination_cards:hover .Destination_title {
+    color: #f2f2f2;
+}
+
+.Destination_cards:hover img {
+    filter: brightness(60%);
+}
+
+/* end .Destination */
+/* :start package */
+.Package {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: auto;
+
+}
+
+.Package_card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.Package_card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+
+}
+
+.Package_card h3 {
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+}
+
+.Package_card P {
+    padding: 10PX;
+
+}
+
+.Price_book {
+    float: right;
+    color: #9c7a1d;
+}
+
+.Package_card {
+    background-color: #f2f2f2;
+}
+
+.book_now {
+    display: inline-block;
+    background-color: #2d3892;
+    border: #2d3892;
+    color: #9c7a1d;
+    border-radius: 4px;
+    padding: 4px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    float: right;
+    margin: right 10px;
+    ;
+}
+
+/* .Packagee :end */
+/* <!-- stat Footer --> */
+.Footer {
+    width: 80%;
+    margin: auto;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.footer_section {
+    background-color: #f2f2f2;
+    padding: 100px;
+    margin-top: 80px;
+}
+
+.how_img {
+    float: right;
+    width: 40%;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.Footer h2 {
+    text-align: left;
+    display: block;
+    font-size: 0.8em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+
+.Footer p {
+    margin: 30px;
+    text-align: left;
+    margin-left: 20px;
+    line-height: 10px;
+}
+
+
+.text_foot {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* .Package_image_hover */
+.Package_image_hover :hover .Package_img {}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f0;
+}
+
+/* ==========================================
+           ၁။ OUR BLOG SECTION
+           ========================================== */
+.blog-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.blog-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 15px;
+    width: 320px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.blog-card h3 {
+    font-size: 18px;
+    margin: 15px 0 8px 0;
+    color: #222;
+}
+
+.blog-card p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.btn-read {
+    align-self: flex-end;
+    background-color: #3b5998;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-read:hover {
+    background-color: #2d4373;
+}
+
+/* ==========================================
+           ၂။ FOOTER SECTION (အမည်းရောင်)
+           ========================================== */
+footer {
+    background-color: #1a1e21;
+    color: #ccc;
+    padding: 40px 60px;
+    margin-top: 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-col-about {
+    flex: 1.5;
+}
+
+.footer-logo {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+
+}
+
+.footer-col p {
+    font-size: 12px;
+    line-height: 1.6;
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.footer-col h4 {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    font-size: 13px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.footer-col ul li:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-box {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+}

@@ -13,3 +13,8 @@ h1{
     color: #000;
     text-align: center;
 }
+:empty{
+    height: 20px;
+    background-color: red;
+
+}

@@ -1,0 +1,36 @@
+h1{
+    color: red;
+    text-align: center;
+}
+.pariatur_relative{
+    border: 1px solid rebeccapurple;
+    width: 1000PX;
+    height: 500px;
+    position: relative;
+}
+.relative{
+    border: 1px solid green;
+    width: 500;
+    height: 500;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.pariatur_absolute{
+    border: 1px solid rebeccapurple;
+    width: 1000PX;
+    height: 500px;
+    position: relative;
+}
+.absolute{
+    border: 1px solid RED;
+    width: 500px;
+    height: 200px;
+    position: fixed;
+}
+.fixed{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
