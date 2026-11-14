@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Straing Lesson</h1>
+    <script>
+        let firsName = "Developer"
+        let lastName = "Kyaw Gyi"
+
+        // let fullname = "<h3>" + firsName + " " + lastName + "</h3>" + "I am 30 Years Old.";
+        let fullname = `<h3> ${firsName} ${lastName}.</h3> I am 30 Year Olds.`;
+        document.write(fullname)
+        document.write("<br>")
+
+        let job = " Developer           Kyaw gyi       "
+        console.log(job.trim())
+
+        console.log(job.toUpperCase())
+        console.log(job.toLowerCase())
+        //ပြန်ရှာတဲအချိန်မှာသုံးတယ်( console.log(ser.search("Kyaw"))) 
+        let ser = " Developer Kyaw Gyi";
+        console.log(ser.search("Kyaw"));
+        console.log(ser.indexOf("kyaw"));
+        //ပြောင်းခြင်တာရှိရင် console.log(rep.replace("Myanday ကနေ","Yangonကို"));
+        let rep = "I Live Myanday"
+        console.log(rep);
+        console.log(rep.replace("Myanday","Yangon"));
+       //ကိန်းတွေကို , နေရာမှာ တစ်ခုအစားထိုခြင်ရင် console.log(num.replace(/\,/g,'ဘာဘဲဖြစ်ဖြစ်ထည့်လိုရပါတယ်'));
+        let num = '1,234,345,543,433'
+        console.log(num);
+        console.log(num.replace(/\,/g,'.'));
+        //တစ်ခုခုကို အစားတဲနည်  ၁("I'm Kyaw Gyi , 5' 9\"" )
+        //                    ၂('I\'m Kyaw Gyi , 5\' 9"' )
+        //                    ၃(`I'm Kyaw Gyi , 5' 9\"`)
+        document.write("I'm Kyaw Gyi , 5' 9\"" )
+        document.write("<br>")
+        document.write('I\'m Kyaw Gyi , 5\' 9"' )
+        document.write("<br>")
+        document.write(`I'm Kyaw Gyi , 5' 9\"`)
+        
+        
+        
+        
+
+        
+
+        
+
+    </script>
+    
+</body>
+</html>

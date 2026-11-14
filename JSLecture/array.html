@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Lesson</h1>
+    <script>
+    //Array
+    let studentList = ['kyaw kyae','aung aung','tun tun']
+    console.log(studentList);
+    console.log(studentList.length);
+    console.log(studentList[2]);
+    // Push
+    //နောက်ထက်ထည့်ခြင်ရင် studentList.push('hlaa hlaa')
+    studentList.push('hlaa hlaa')
+    console.log(studentList);
+    
+    //array.pop() နောက်ကလုကိုဖြတ်တာ
+    studentList.pop();
+    console.log(studentList);
+    //array unshift studentList.unshift("Aye Aye")အရှေ့ကိုပိုတဲ့နေရာမှာသုံးတယ်
+    studentList.unshift("Aye Aye")
+    console.log(studentList);
+    
+    //array.shift (unshift ကိုပြန်ဖြုတ်တာမှာသုံးတာ)
+    studentList.shift();
+    console.log(studentList);
+    //sort()
+    let studentList1 =[  'kyaw kyae','aung aung','tun tun','aung kyaw','kyaw thu' ]
+    studentList1.sort();
+    console.log(studentList1);
+        
+    // let studentList2 =[  'kyaw kyae','aung aung','tun tun','aung kyaw','kyaw thu' ]
+    
+    // studentList2.sort().reverse()
+    // console.log(studentList2);
+    
+    //array to string
+    let studentList2 = studentList1.toString()
+
+    let studentList3 =['kyaw kyae','aung aung','tun tun','aung kyaw','kyaw thu']
+    let studentListArray = studentList3.splice(',');
+    console.log(studentListArray);
+
+    let array1 = [1,2,3,4];
+    let array2 = [5,6,7,8];
+    let array3 = [9,10,11,12]
+
+    let array4 =array1.concat(array2)
+    console.log(array4);
+    
+    let array5 = [...array1,...array2,...array3,...array4]
+    console.log(array5);
+    
+
+
+    
+    
+    
+
+
+    </script>
+</body>
+</html>

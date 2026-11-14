@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lopping lesson</h1>
+    <script>
+        //for loop
+        // အ‌ရေအတွက်အတိအကျသုံးချင်/သိချင်တဲနေရာမှာသုံးတယ်
+        // for(initialize,conditon,true;update){
+        //     //code
+        // }
+         // document.write(`<h1>Hello World </h3>`)
+        for(let i = 0 ; i < 3 ; i++){
+         document.write(`<h3>Hello World ${i}</h3>`)
+        }
+        
+        let latptoplist = ['Macbook','Asus','lenovo','dell','hp','acer']
+        for(let i = 0; i < latptoplist.length; i++){
+            document.write(`My Laptop is ${latptoplist[i]}<br>`)
+
+        }
+        for(let i = 0; i < 6; i++){
+            for(let k = 0; k <= i ;k++){
+                document.write("*");
+            }
+            document.write("<br>")
+        }
+        // while loop
+        // let number = parseInt(prompt("Enter A Number"));
+        // console.log(number);
+        // while(number <=100){
+        //     document.write(`your number is while loop in ${number} <br>`)
+        //     number +=10;
+        // }
+        let number = parseInt(prompt("Enter A Number"));
+        console.log(number);
+        
+        do{
+            document.write(`your number is while loop in ${number} <br>`)
+            number += 10;
+        }while(number<100)
+        
+        
+        
+    </script>
+    
+</body>
+</html>
