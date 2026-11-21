@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Function lesson</h1>
+    <script>
+        //fuction
+        // fuction *fuctionname ကြိုက်တဲနမည်ပေးလို့ရတယ်*(){
+        //     code
+        // }ရေနည်း
+        function say () {
+            document.write("<h3>hello world</h3>")
+            
+        }
+        //fuction call
+        say()
+        //fuction With parameter
+        function sum(num1,num2) {
+            let result = num1+num2;
+            document.write(`<h3>${num1}+${num2}=${result}</h3>`)
+            
+        }
+        sum(10,5)
+        sum(2311,1233)
+        sum(5115,1141)
+//default parameter function
+function mult(num1=3 ,num2=10) {
+        document.write(`<h3>${num1}*${num2}=${num1*num2}</h3>`) 
+
+}
+mult();
+mult(2342,34543)
+
+//return function
+function sub(num1,num2){
+    let result = num1-num2;
+    return result
+}
+   let data = sub (10,50)
+
+   if(data>0){
+    document.write(`<h3>Your Result Is grather Than 0</h3>`)
+   }
+else{
+    document.write(`<h3>Your Result Is less Than 0</h3>`)
+}
+
+
+
+</script>
+    
+</body>
+</html>

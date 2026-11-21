@@ -22,12 +22,29 @@
         }
          let number = parseInt(prompt("Enter A Number"));
         console.log(number);
-        for(let  i = 1; i <= 50; i++){
-            let answer=number*i;
-            document.write(`${number} * ${i} = ${answer}<br>`)
 
+        for (let i = 1; i <= 50; i++) {
+            let answer = number * i;
+            document.write(`${number} * ${i} = ${answer}<br>`);
         }
 
+        // 11/15
+        let secretNo = 7;
+        let userNo = parseInt(prompt("Enter a number between 1 to 10!"));
+
+        while (secretNo !== userNo) {
+            if (userNo < secretNo) {
+                alert("Lower, try again.");
+            } else if (userNo > secretNo) {
+                alert("Higher, try again.");
+            } else {
+                break;
+            }
+            userNo = parseInt(prompt("Enter a number between 1 to 10!"));
+        }
+
+        alert("You guessed it! The secret number is 7.");
+        document.write("Correct now")
 
         
         
