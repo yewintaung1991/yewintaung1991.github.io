@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>jouery is funny</h1>
+    <button id="click">click</button>
+
+    <p id="p-id">This is p id</p>
+    <p id="p-select">This is p select</p>
+    <p id="p-class">This is p cleass1</p>
+    <p id="p-class">This Is p cleass 2</p>
+   
+    <script src="jquery-4.1.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#click").click(function () {
+                $("p").hide(function () {
+                    alert("p element hided");
+                });
+            });
+        });
+        $('#p-id').click(function(){
+            $('.p-cleass').hide()
+        })
+        $('#p-select').click(function(){
+            // self-selector
+            // s('#p-select').hide()
+            $(this).hide()
+        })
+    </script>
+
+    
+</body>
+</html>

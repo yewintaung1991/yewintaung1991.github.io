@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    name: <input type="text" name="" id="name">
+    age: <input type="text" name="" id="age">
+   
+    <button id="add">ADD</button>
+    <button id="get">GET</button>
+    <h3>User List</h3>
+    <table border="1" cellpadding="25" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+
+    </table>
+
+    <script src="jquery-4.1.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#add").click(function(){
+                var name = $("#name").val();
+                var age = $("#age").val();
+                console.log(name, age);
+                let user = {
+                    userName: name,
+                    userAge: age
+                }
+                console.log(user);
+                let userString = JSON.stringify(user);
+                console.log(userString);
+
+                localStorage.setItem("userlists", userString);
+            })
+
+            $("#get").click(function(){
+               
+                let userString = localStorage.getItem("userlists");
+                console.log("user string",userString);
+                if(userString){
+                    let userObj = JSON.parse(userString);
+                    console.log("user",userObj);
+                    console.log("user name",userObj.userName);
+                    let data = `<tr>
+                    <td>${userObj.userName}</td>
+                    <td>${userObj.userAge}</td>
+                    </tr>`;
+                    $('tbody').html(data);
+                }
+
+                
+            })
+        })
+    </script>
+    
+</body>
+</html>

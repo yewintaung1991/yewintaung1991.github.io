@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="day">Today is saturday</p>
+    <button id="add-css">Add CSS</button>
+
+
+    <script src="jquery-4.1.0.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#add-css").click(function(){
+               $(".day").css({
+                "color":"red",
+                "font-size":"30px",
+                "background-color":"yellow"
+               })
+            })
+        })
+    </script>
+    
+</body>
+</html>

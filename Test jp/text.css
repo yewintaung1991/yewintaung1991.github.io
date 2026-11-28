@@ -21,3 +21,110 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
+:root {
+  color-scheme: light dark;
+  --bg: #0b1020;
+  --text: #e7ecf5;
+  --muted: #9aa6c0;
+  --accent: #38bdf8;
+  --accent-strong: #0ea5e9;
+  --border: rgba(231, 236, 245, 0.12);
+  --chip: rgba(148, 166, 192, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.18), transparent 45%),
+    var(--bg);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-strong);
+}
+
+.app-nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.05rem;
+}
+
+.app-nav .active {
+  font-weight: 700;
+  color: var(--text);
+}
+
+hr {
+  margin: 0;
+  border: none;
+  border-top: 1px solid var(--border);
+}
+
+.app-main {
+  padding: 1.5rem;
+}
+
+.page {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+
+.page h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.page p {
+  color: var(--muted);
+}
+
+code {
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.4rem;
+  background: var(--chip);
+  font-size: 0.95em;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  padding: 0.45rem 0.9rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: #04121f;
+  background: var(--accent);
+}
+
+button:hover {
+  background: var(--accent-strong);
+}
+
+.error-boundary,
+.not-found {
+  max-width: 46rem;
+  margin: 2rem auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.error-actions,
+.not-found-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}

@@ -42,4 +42,11 @@
             box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
             backdrop-filter: blur(12px);
         }
-        
+        code {
+            font-family: monospace;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #1a1a1a;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }

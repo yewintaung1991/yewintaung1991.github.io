@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ကျောင်းသားမှတ်ပုံတင်စာရင်း</title>
+</head>
+<body>
+    <h1>ကျောင်းသားမှတ်ပုံတင်ရန်</h1>
+    <form name="myForm" onsubmit="showdata(event)">
+        <label for="name">အမည်</label>
+        <input type="text" name="name" id="name" required><br><br>
+        <label for="age">အသက်</label>
+        <input type="number" name="age" id="age" min="1" max="150" required><br><br>
+        <label for="address">လိပ်စာ</label>
+        <input type="text" name="address" id="address" required><br><br>
+        <button type="submit">မှတ်ပုံတင်မည်</button>
+    </form>
+
+    <h1>ကျောင်းသားစာရင်း</h1>
+    <table border="1" cellpadding="20" cellspacing="0">
+        <thead>
+            <tr>
+                <th>စဉ်</th>
+                <th>အမည်</th>
+                <th>အသက်</th>
+                <th>လိပ်စာ</th>
+            </tr>
+        </thead>
+        <tbody id="studentList"></tbody>
+    </table>
+
+<script>
+    let studentCount = 0;
+
+    function showdata(event) {
+        event.preventDefault();
+
+        const name = document.myForm.name.value.trim();
+        const age = document.myForm.age.value.trim();
+        const address = document.myForm.address.value.trim();
+
+        if (!name || !age || !address) {
+            alert("အချက်အလက်အားလုံး ဖြည့်ပါ။");
+            return;
+        }
+
+        studentCount++;
+        const tableRow = document.createElement("tr");
+
+        [studentCount, name, age, address].forEach(value => {
+            const cell = document.createElement("td");
+            cell.textContent = value;
+            tableRow.appendChild(cell);
+        });
+
+        document.getElementById("studentList").appendChild(tableRow);
+        document.myForm.reset();
+        document.getElementById("name").focus();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="my-class">Wellcome To my Class</p>
+    <input type="text" name="" id="name">
+
+    <script src="jquery-4.1.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#my-class").mouseover(function() {
+                $(this).css({
+                    'background-color': 'yellow',
+                    'color': 'red',
+                    'max-width': '250px',
+                    'font-size': '30px',
+                    'padding': '10px'
+                });
+            });
+
+            $("#my-class").mouseout(function() {
+                $(this).css({
+                    'background-color': 'white',
+                    'color': 'black',
+                    'max-width': '250px',
+                    'font-size': '20px',
+                    'padding': '10px'
+                });
+            });
+
+            $("#name").focus(function() {
+                $(this).css({
+                    'background-color': 'yellow',
+                    'color': 'red',
+                    'max-width': '250px',
+                    'font-size': '30px',
+                    'padding': '10px'
+                });
+            });
+
+            $("#name").blur(function() {
+                $(this).css({
+                    'background-color': 'white',
+                    'color': 'black',
+                    'max-width': '250px',
+                    'font-size': '20px',
+                    'padding': '10px'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

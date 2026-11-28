@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .new-class{
+            color: red;
+            font-size: 30px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p class="title">This is a title</p>
+    <button id="add-class">Add Class</button>
+    <button id="remove-class">Remove Class</button>
+    <button id="toggle-class">Toggle Class</button>
+
+
+    <script src="jquery-4.1.0.min.js"></script>
+   
+   <script>
+        $(document).ready(function(){
+            $("#add-class").click(function(){
+                $(".title").addClass("new-class")
+            })
+            $("#remove-class").click(function(){
+                $(".title").removeClass("new-class")
+            })
+            $("#toggle-class").click(function(){
+                $(".title").toggleClass("new-class")
+            })
+        })
+        </script>
+</body>
+</html>
